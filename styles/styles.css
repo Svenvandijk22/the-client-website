@@ -1,1 +1,93 @@
-/* CSS */
+body{ margin:0;}
+
+
+
+.logo{
+
+    margin-bottom: 10px;
+}
+
+
+.nav ul {
+
+margin-top: 20px;
+display: flex;
+    list-style-type: none;
+    background-color: white;
+   
+    font-family: arial;
+    box-shadow: 10px 5px 5px grey;
+    /* justify-content: space-evenly; */
+    column-gap: 10em;
+    
+    
+  
+   
+   
+}
+
+
+.nav a{
+    color: black;
+     text-decoration: none;
+    padding: 15px;
+    display : block;
+    text-align: center;
+
+
+}
+.nav a:hover{
+
+color: grey;
+
+}
+
+.nav li{
+
+
+    float: left;
+}
+
+h1,h2{ font-family: arial;
+
+
+
+}
+
+p{
+    font-family: arial;
+}
+
+.hero{
+    display: flex;
+    
+}
+
+
+
+.links{
+
+padding-top: 100px;
+    width: 50%;
+    text-align: center;
+
+
+}
+
+.rechts{
+    padding-top: 80px;
+
+    width: 50%;
+}
+
+.nieuwsartikelen{
+
+    display:flex;
+    justify-content: space-between;
+}
+
+.linkernieuws,.Middennieuws,.Rechtsnieuws{
+
+    display: 1;
+    place-content: center;
+}
