@@ -1,93 +1,178 @@
-body{ margin:0;}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
 
+body {
+    margin: 0;
+    height: 100%;
+}
 
-
-.logo{
-
+.logo {
     margin-bottom: 10px;
 }
 
-
 .nav ul {
-
-margin-top: 20px;
-display: flex;
+    margin-top: 20px;
+    display: flex;
     list-style-type: none;
     background-color: white;
-   
     font-family: arial;
     box-shadow: 10px 5px 5px grey;
-    /* justify-content: space-evenly; */
-    column-gap: 10em;
-    
-    
-  
-   
-   
 }
 
-
-.nav a{
+.nav a {
     color: black;
-     text-decoration: none;
+    text-decoration: none;
     padding: 15px;
-    display : block;
+    display: block;
     text-align: center;
 
 
 }
-.nav a:hover{
 
-color: grey;
+.nav a:hover {
+
+    color: grey;
 
 }
 
-.nav li{
+.nav li {
 
 
     float: left;
 }
 
-h1,h2{ font-family: arial;
+h1 {
+    font-family: Arial;
+    font-size: 50px;
+    color: #333467;
+}
+
+
+.knop_naast_tekst{
+   
+
+     @media (min-width: 678px) {
+        display:flex;
+      
+
+
+    }
+
+}
+
+h2 {
+    font-family: arial;
+    color: #333467;
+
 
 
 
 }
 
-p{
+p {
     font-family: arial;
 }
 
-.hero{
-    display: flex;
+.hero {
+   
+
+    @media (min-width: 678px) {
+        display:flex;
+        height: 700px;
+
+
+    }
+
+}
+
+
+
+.links {
     
-}
-
-
-
-.links{
-
-padding-top: 100px;
-    width: 50%;
+    display: flex;
+    padding-top: 50px;
+   
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    @media (min-width: 678px) {
+        width: 35%;
 
 
+    }
 }
 
-.rechts{
+.rechts {
     padding-top: 80px;
+    align-items: center;
+    
 
-    width: 50%;
+
+   
+
+     @media (min-width: 678px) {
+    
+        width: 65%;
+        
+        
+        padding-top: 180px;
+      
+
+        
+        
+
+
+    }
 }
 
-.nieuwsartikelen{
+.test5{
+   display: flex;
+   width: 370px; 
+   align-items: center;
+  
 
-    display:flex;
+   @media (min-width: 678px) {
+        width: 600px; 
+       
+
+        
+        
+
+
+    }
+
+
+}
+
+
+
+.tekst_laatste_nieuws {
+
+    width: 25rem;
+    font-family: arial;
+    color: #333467;
+}
+
+
+.nieuwsartikelen {
+
     justify-content: space-between;
+    @media (min-width: 678px) {
+        display: flex;
+       
 }
-
-.linkernieuws,.Middennieuws,.Rechtsnieuws{
+}
+.linkernieuws,
+.Middennieuws,
+.Rechtsnieuws {
 
     display: 1;
     place-content: center;
+    text-align: center;
 }
