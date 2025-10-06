@@ -14,6 +14,8 @@ body {
     margin-bottom: 10px;
 }
 
+
+
 .nav ul {
     margin-top: 20px;
     display: flex;
@@ -52,17 +54,39 @@ h1 {
 }
 
 
-.knop_naast_tekst{
-   
-
-     @media (min-width: 678px) {
-        display:flex;
-      
 
 
-    }
 
+.lees-meer {
+    font-family: arial;
+    display: inline-flex;         /* tekst + pijl netjes naast elkaar */
+    align-items: center;          /* verticaal centreren */
+    gap: 8px;                     /* ruimte tussen tekst en pijl */
+    font-size: 1rem;           
+    text-decoration: none;        
+    color:  #333467;                
+    font-weight: bold;            
+    transition: color 0.2s ease;  /* animatie bij hover */
 }
+
+.lees-meer:hover {
+   color: #e45b00; /* accentkleur toevoegen */
+}
+
+.arrow {
+   font-size: 1.5rem;  /* zelfde grootte als tekst */
+   transition: transform 0.2s ease;
+}
+
+.lees-meer:hover .arrow {
+    
+    transform: translateX(5px); /* pijl schuift iets naar rechts bij hover */
+}
+
+
+
+
+
 
 h2 {
     font-family: arial;
@@ -77,12 +101,19 @@ p {
     font-family: arial;
 }
 
+h1{
+    padding-bottom: 10px;
+}
+
+
+
+
 .hero {
    
 
     @media (min-width: 678px) {
-        display:flex;
-        height: 700px;
+            display:flex;
+            height: 900px;
 
 
     }
@@ -93,70 +124,126 @@ p {
 
 .links {
     
+    padding-top: 20px;
     display: flex;
-    padding-top: 50px;
-   
     text-align: center;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     
+    
     @media (min-width: 678px) {
-        width: 35%;
+            width: 35%;
+            margin-top: 190px;
+       
 
 
     }
 }
 
+
+
+
+
+
+
 .rechts {
-    padding-top: 80px;
+    padding-top: 10px;
     align-items: center;
+   
     
 
 
    
 
      @media (min-width: 678px) {
-    
-        width: 65%;
-        
-        
-        padding-top: 180px;
-      
-
-        
-        
-
-
-    }
+             width: 65%;
+             padding-left: 55px;
+             padding-top: 100px;}
 }
 
-.test5{
-   display: flex;
-   width: 370px; 
-   align-items: center;
+.titel_hero{
+
+    margin-top: 20px;
+}
+
+ .responsive_img_artikelen{
+
+    display: flex;
+    width: 370px; 
+    align-items: center;
   
 
-   @media (min-width: 678px) {
-        width: 600px; 
-       
-
-        
-        
-
-
-    }
-
-
+    @media (min-width: 678px) {
+        width: 350px;}
 }
+
+.responsive_img{
+    
+    display: flex;
+    width: 370px; 
+    align-items: center;
+  
+
+    @media (min-width: 678px) {
+            width: 700px;}
+}
+
+.locatie-label-oost {
+   
+    margin-top: 10px;
+    font-family: Arial;
+    background-color: #8EA34B; 
+  color: white;             
+  text-transform: lowercase; 
+  font-size: 20px;           
+  font-weight: 200;
+  padding: 4px 12px;         /* Binnenruimte */
+  border-radius: 2px;        
+  display: inline-block;     
+  margin-right: 8px;         /* Ruimte tussen label en titeltekst */
+  vertical-align: middle;    /* Lijnt netjes uit naast de titel */
+}
+
+.locatie-label-nieuw-west {
+ margin-top: 10px;
+    font-family: Arial;
+    background-color: #333467; 
+  color: white;             
+  text-transform: lowercase; 
+  font-size: 20px;          
+  font-weight: 200;
+  padding: 4px 12px;         /* Binnenruimte */
+  border-radius: 2px;        
+  display: inline-block;     /* Zorgt dat het blokje de juiste maat heeft */
+  margin-right: 8px;         /* Ruimte tussen label en titeltekst */
+  vertical-align: middle;    /* Lijnt netjes uit naast de titel */
+}
+
+.locatie-label-Zuid-oost {
+    margin-top: 10px;
+    font-family: Arial;
+    background-color: #085B64; 
+    color: white;             
+    text-transform: lowercase; 
+    font-size: 20px;           
+    font-weight: 200;
+    padding: 4px 12px;         /* Binnenruimte */
+    border-radius: 2px;        /* Kleine hoekafronding */
+    display: inline-block;     /* Zorgt dat het blokje de juiste maat heeft */
+    margin-right: 8px;         /* Ruimte tussen label en titeltekst */
+    vertical-align: middle;    /* Lijnt netjes uit naast de titel */
+}
+
+
 
 
 
 .tekst_laatste_nieuws {
-
-    width: 25rem;
-    font-family: arial;
-    color: #333467;
+     margin-top: 10px;
+     width: 25rem;
+     font-family: arial;
+     color: #333467;
+    
 }
 
 
@@ -164,15 +251,56 @@ p {
 
     justify-content: space-between;
     @media (min-width: 678px) {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
        
 }
 }
-.linkernieuws,
-.Middennieuws,
-.Rechtsnieuws {
+.linkernieuws{
 
-    display: 1;
-    place-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
     text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+ @media (min-width: 678px) {
+    text-align: left;
+    padding-left: 80px;
+ }
+   
+}
+
+
+
+.Middennieuws{
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+
+    @media (min-width: 678px) {
+    text-align: left;
+    padding-left: 80px;
+ }
+   
+}
+
+
+
+.Rechtsnieuws{
+
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+
+       @media (min-width: 678px) {
+    text-align: left;
+    padding-left: 80px;
+ }
+   
 }
