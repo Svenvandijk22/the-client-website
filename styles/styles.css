@@ -56,6 +56,15 @@ h1 {
 
 
 
+.oost_knop{transition: transform 0.3s ease;}
+.oost_knop:hover{transform: scale(1.1);}
+
+
+.nieuw_west_knop{transition: transform 0.3s ease;}
+.nieuw_west_knop:hover{transform: scale(1.1);}
+
+.zuid_oost_knop{transition: transform 0.3s ease;}
+.zuid_oost_knop:hover{transform: scale(1.1);}
 
 .lees-meer {
     font-family: arial;
@@ -303,4 +312,36 @@ h1{
     padding-left: 80px;
  }
    
+}
+
+.linkernieuws2{
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    text-align: center;
+   
+       
+    @media (min-width: 678px) {
+    text-align: left;
+    padding-left: 80px;
+     padding-top: 50px ;
+ }
+}
+
+.Middennieuws2{
+    
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    text-align: center;
+   
+       
+    @media (min-width: 678px) {
+    text-align: left;
+    padding-left: 80px;
+   
+ }
 }
