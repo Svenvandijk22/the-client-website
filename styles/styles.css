@@ -167,7 +167,7 @@ h1{
      @media (min-width: 678px) {
              width: 65%;
              padding-left: 55px;
-             padding-top: 100px;}
+             padding-top: 90px;}
 }
 
 .titel_hero{
@@ -326,22 +326,23 @@ h1{
     @media (min-width: 678px) {
     text-align: left;
     padding-left: 80px;
-     padding-top: 50px ;
+    padding-top: 50px ;
  }
 }
 
 .Middennieuws2{
     
-    grid-column-start: 3;
-    grid-column-end: -1;
-    grid-row-start: 4;
-    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
     text-align: center;
    
        
     @media (min-width: 678px) {
     text-align: left;
     padding-left: 80px;
+    padding-top: 50px ;
    
  }
 }
