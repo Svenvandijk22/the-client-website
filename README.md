@@ -23,8 +23,14 @@ bezig was om de huidige content beter in te delen. Eerste was om een laaste/rece
 
 
 Wat ik heb gedaan door de artikelen in 3 rijen te delen hierdoor kon ik de content beter presenteren 
-en ook een krantfeeling naar boven halen.
+en ook een krantfeeling naar boven halen. Bij de leesmeer knop als je hovert wordt de kleur een accent kleur oranje
+
 <img width="1880" height="834" alt="Schermopname (64)" src="https://github.com/user-attachments/assets/dc17817f-5e91-411b-8ab7-e0710881e124" />
+
+
+Verder op mobiel wordt de content ook onder elkaar gezet 
+
+<img width="1800" height="760" alt="all-devices-black" src="https://github.com/user-attachments/assets/31c7e5bd-af3d-4d00-82bb-f11c3ddecad1" />
 
 
 
@@ -32,7 +38,8 @@ en ook een krantfeeling naar boven halen.
 ## Kenmerken
 
 Technieken die ik heb grbruikt zijn grid om artikelen in rijen en naast me kaar te zetten.
-verder heb ik gebruik gemaakt van flebox aan de boven kant om het beter in te delen.
+Verder heb ik gebruik gemaakt van flebox aan de boven kant om het beter in te delen.
+
 
 
 
