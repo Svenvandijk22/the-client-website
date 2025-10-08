@@ -31,6 +31,9 @@ en ook een krantfeeling naar boven halen.
 
 ## Kenmerken
 
+Technieken die ik heb grbruikt zijn grid om artikelen in rijen en naast me kaar te zetten.
+verder heb ik gebruik gemaakt van flebox aan de boven kant om het beter in te delen.
+
 
 
 
